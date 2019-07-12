@@ -1,0 +1,66 @@
+
+/* Pour les videos */
+iframe {  
+    width: 14.6vw; 
+    height: 25vw;
+}
+
+.mainDiv {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #555;
+    background-color: white;
+    height: auto;
+}
+
+/* Pour la nav bar */
+* {box-sizing: border-box}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #9900cc;
+}
+
+#navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position: fixed;
+  transition: top 0.3s;
+  top: 0;
+}
+
+#navbar a {
+  float: left;
+  white-space: nowrap;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+#navbar a:hover {
+  background-color: #000;
+}
+
+#navbar a.active {
+  background-color: #9900cc;
+}
+
+@media screen and (max-width: 500px) {
+  #navbar a {
+    float: none;
+    padding: 12px;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
