@@ -5,27 +5,77 @@ iframe {
     height: 25vw;
 }
 
-.mainDiv {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #555;
-    background-color: white;
-    height: auto;
-}
-
-/* Pour la nav bar */
+/* Tout  */
 * {box-sizing: border-box}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0;
     background-color: #9900cc;
 }
+
+.mainDiv {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: #555; */
+    width: 80%;
+    height: auto;
+}
+
+.propositions {
+  text-align: center;
+}
+
+
+
+
+
+/* SearchBar */
+#txtRecherche {
+  background-image: url('../Images/searchIcon\ -\ 512x512.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#articleList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#articleList li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#articleList li a:hover:not(.header) {
+  background-color: #eee;  
+}
+
+
+
+/* ToolTip "Donne tout." */
+
+
+
+/* Pour la nav bar */
 
 #navbar {
   width: 100%;
