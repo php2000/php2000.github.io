@@ -9,27 +9,37 @@ iframe {
 * {box-sizing: border-box}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin: 0;
-    background-color: #9900cc;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #9900cc;
 }
 
 .mainDiv {
-    margin-top: 80px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    /* border-style: solid;
-    border-width: 2px;
-    border-color: #555; */
-    width: 80%;
-    height: auto;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  /* border-style: solid;
+  border-width: 2px;
+  border-color: #555; */
+  width: 80%;
+  height: auto;
+}
+
+main {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
 }
 
 .propositions {
-  text-align: center;
+  text-align: left;
 }
 
 
