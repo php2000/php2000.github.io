@@ -1,8 +1,8 @@
 
 /* Pour les videos */
 iframe {  
-    width: 14.6vw; 
-    height: 25vw;
+  width: 14.6vw; 
+  height: 25vw;
 }
 
 /* Tout  */
@@ -13,19 +13,6 @@ body {
   text-align: center;
   margin: 0;
   background-color: #9900cc;
-}
-
-.mainDiv {
-  margin-top: 80px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
-  /* border-style: solid;
-  border-width: 2px;
-  border-color: #555; */
-  width: 80%;
-  height: auto;
 }
 
 main {
@@ -64,11 +51,18 @@ main {
   margin: 0;
 }
 
-#articleList li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
+#articleList li {
+  display: none;
+  /* padding: 12px; */
+  /* border: 1px solid #ddd; */
+  /* margin-top: -1px; */
   background-color: #f6f6f6;
+}
+
+#articleList li a {
   padding: 12px;
+  border: 1px solid #ddd;
+  margin-top: -1px;
   text-decoration: none;
   font-size: 18px;
   color: black;
@@ -76,6 +70,10 @@ main {
 }
 
 #articleList li a:hover:not(.header) {
+  background-color: #eee;  
+}
+
+#articleList li:hover:not(.header) {
   background-color: #eee;  
 }
 

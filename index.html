@@ -65,10 +65,19 @@
                 }
                 prevScrollpos = currentScrollPos;
             }
-
+            
+            document.getElementById("txtRecherche").onclick = function() { 
+                // document.write("click");
+                ul = document.getElementById("articleList");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++)
+                {
+                    li[i].style.display = "block";
+                }
+             };
 
             function searchBarFunc() 
-            {
+            {                   
                 var input, filter, ul, li, a, i, txtValue;
                 input = document.getElementById("txtRecherche");
                 filter = input.value.toUpperCase();
@@ -78,7 +87,7 @@
                     a = li[i].getElementsByTagName("a")[0];
                     txtValue = a.textContent || a.innerText;                           
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "";
+                        li[i].style.display = "block";
                     } else {
                         li[i].style.display = "none";
                     }
