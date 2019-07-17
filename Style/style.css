@@ -31,8 +31,6 @@ main {
 
 
 
-
-
 /* SearchBar */
 #txtRecherche {
   background-image: url('../Images/searchIcon\ -\ 512x512.png');
@@ -43,6 +41,7 @@ main {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  border-radius: 3px;  
 }
 
 #articleList {
@@ -66,21 +65,61 @@ main {
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block;
+  display: block;  
 }
 
 #articleList li a:hover:not(.header) {
-  background-color: #eee;  
+  background-color: #eee;
 }
 
 #articleList li:hover:not(.header) {
-  background-color: #eee;  
+  background-color: #eee;
 }
 
 
 
 /* ToolTip "Donne tout." */
 
+.tooltip {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  /* border: 1px solid black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 130%;
+  left: 3%;
+
+  /* Fade in - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 /* Pour la nav bar */
@@ -90,18 +129,19 @@ main {
   background-color: #555;
   overflow: auto;
   position: fixed;
-  transition: top 0.3s;
+  transition-property: top;
+  transition-duration: 0.3s;
   top: 0;
 }
 
 #navbar a {
   float: left;
-  white-space: nowrap;
+  white-space: nowrap; /* Pour pas que machine a laver aille a la ligne*/
   padding: 12px;
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 20%; /* Four links of equal widths */
+  width: 20%; /* Five links of equal widths */
   text-align: center;
 }
 

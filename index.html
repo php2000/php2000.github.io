@@ -17,14 +17,16 @@
             <a class="active" href="index.html">Articles</a> 
             <a href="videos.html">Vid&eacuteos</a> 
             <a href="machinealaver.html">Machine &agrave laver</a>
-            <a href="#">Contact</a> 
-            <a href="#">Connexion</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="login.html">Connexion</a> 
         </div>
 
         <main>
-
-            <input type="text" id="txtRecherche" onkeyup="searchBarFunc()" placeholder="Rechercher un article..." title="Recherche Article">
-            <div class="propositions">
+            <div class="tooltip">
+                <span class="tooltiptext">Donne tout.</span>             
+                <input type="text" id="txtRecherche" onkeyup="searchBarFunc()" placeholder="Rechercher un article..." title="Recherche Article">         
+            </div> 
+            <div class="propositions">                
                 <ul id="articleList">
                     <li><a href="#">Tom est un peigne gauche</a></li>
                     <li><a href="#">Tuto salle : les pro-tips &agrave; conna&icirc;tre</a></li>
@@ -39,6 +41,7 @@
                     <li><a href="#">Lootbox : la th&eacute;orie du micro-ondes</a></li>
                 </ul>
             </div>
+            
         </main>
 
         
@@ -66,7 +69,8 @@
                 prevScrollpos = currentScrollPos;
             }
             
-            document.getElementById("txtRecherche").onclick = function() { 
+            document.getElementById("txtRecherche").onclick = function() 
+            { 
                 // document.write("click");
                 ul = document.getElementById("articleList");
                 li = ul.getElementsByTagName("li");
@@ -74,7 +78,7 @@
                 {
                     li[i].style.display = "block";
                 }
-             };
+            };
 
             function searchBarFunc() 
             {                   
@@ -93,6 +97,8 @@
                     }
                 }
             }
+
+            
         </script>
 
     </body>
