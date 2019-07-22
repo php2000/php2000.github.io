@@ -55,7 +55,6 @@ main {
 
 #articleList li a:hover:not(.header) {
   background-color: #eee;
-  transition: 
 }
 
 #articleList li:hover:not(.header) {
