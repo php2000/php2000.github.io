@@ -11,12 +11,45 @@ body {
 
 main {
   margin-top: 80px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
   padding-left: 10%;
   padding-right: 10%;
   text-align: center;
+}
+
+
+#bigDiv {
+  width: 100%;
+  text-align: center;
+  /* border: 1px solid black; */
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;  
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+h2 {
+  padding: 12px;
+  border: solid 1px #555;
+  color: #555;
+  margin-bottom: 40px;
+  border-radius: 3px;
+}
+
+
+
+/*Trombinoscope*/
+.photoTrombi {
+  width: 250px;
+  height: 250px;
+  border-radius: 3px;
+  margin-bottom:20px;
+  margin-left:5px;
+  margin-right:5px;
 }
 
 /* SearchBar */
@@ -46,7 +79,7 @@ main {
 #articleList li a {
   padding: 12px;
   border: 1px solid #ddd;
-  margin-top: -1px;
+  margin-top: 0px;
   text-decoration: none;
   font-size: 18px;
   color: black;
@@ -154,19 +187,12 @@ main {
 
 
 
-/* Pour les videos */
-#bigDiv {
-  width: 100%;
-  text-align: center;
-  /* border: 1px solid black; */
-  padding-left: 18%;
-  padding-right: 18%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 4px;  
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
 
+
+
+
+
+/* Pour les videos */
 iframe {  
   width: 20vw; 
   height: 35vw;
@@ -199,12 +225,17 @@ button {
   border-radius: 2px;
 }
 
-button:hover {
-  opacity: 0.8;
-}
-
 #prevBtn {
   background-color: #555;
+}
+
+#abonnement{
+  margin-top: 20px;
+  background-color: #ff0000;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 /* Make circles that indicate the steps of the form: */
