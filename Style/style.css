@@ -223,7 +223,7 @@ h2 {
 
 #navbar a {
   float: left;
-  white-space: nowrap; /* Pour pas que machine a laver aille a la ligne*/
+  white-space: nowrap; /* Pour pas que "machine a laver" aille a la ligne*/
   padding: 12px;
   color: white;
   text-decoration: none;
