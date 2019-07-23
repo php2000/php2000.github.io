@@ -20,36 +20,44 @@ main {
   }
 
 .feuille{
-    width: 100%;
-    text-align: center;
-    padding-left: 13%;
-    padding-right: 13%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 3px;  
-    padding-bottom: 20px;
-    padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding-left: 13%;
+  padding-right: 13%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;  
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 h1 {
-    padding: 20px;
-    border: solid 1px #555;
-    color: #555;
-    margin-bottom: 40px;
-    border-radius: 3px;
+  padding: 20px;
+  border: solid 1px #555;
+  color: #555;
+  margin-bottom: 40px;
+  border-radius: 3px;
+}
+
+h3 {
+  padding-top:20px;
+  color: #555;
+  text-align: left;
 }
 
 pre {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   text-align: right;
-  margin-top: -20px;
+  float: right;
   font-size: 15px;
+  margin-top: -10px;
+  color: #555;
 }
 
 
 p {
-    text-indent: 25px;
-    text-align: justify;
+  text-indent: 25px;
+  text-align: justify;
 }
 
 
@@ -58,14 +66,14 @@ p {
 }
 
 .conclu {
-    padding-top: 25px;
-    padding-bottom: 25px; 
+    padding-top: 25px;    
 }
 
 footer {
     text-align: right;
     font-style: italic;
     color: #555;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-size: 15px;
 }
@@ -80,6 +88,33 @@ footer {
 }
 .auteur:hover {
     color: #9900cc;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #9900cc;
+}
+
+.titreBio {
+  display: inline-block;
+  width: 100%;
+}
+
+.titreBio h1{
+  float: right;
+  width:78%;
+  /* margin-top:40px; */
+}
+
+.tofID {
+  width: 20%;
+  float: left;
+  border-radius: 3px;
+  margin-top: 20px;
 }
 
 
@@ -110,6 +145,7 @@ footer {
   
   #navbar a:hover {
     background-color: #000;
+    transition: background-color 0.25s;
   }
   
   #navbar a.active {
