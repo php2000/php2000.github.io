@@ -232,7 +232,7 @@ h3::before {
 }
 
 .propositions {
-  text-align: left;  
+  text-align: left;
 }
 
 
@@ -279,6 +279,11 @@ h3::before {
   opacity: 1;
 }
 
+@media screen and (max-width: 700px) {
+  .tooltip {
+    top: 170px;
+  }
+}
 
 /* Pour la nav bar */
 
@@ -312,7 +317,7 @@ h3::before {
   background-color: #9900cc;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:700px) {
   #navbar a {
     float: none;
     padding: 12px;
