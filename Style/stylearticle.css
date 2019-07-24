@@ -20,6 +20,7 @@ main {
   }
 
 .feuille{
+    position: relative;
   width: 100%;
   text-align: center;
   padding-left: 13%;
@@ -172,7 +173,7 @@ li {
     background-color: #9900cc;
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     #navbar a {
       float: none;
       padding: 12px;
@@ -180,4 +181,8 @@ li {
       width: 100%;
       text-align: left;
     }
+      
+      .feuille{
+          top: 200px;
+      }
   }
