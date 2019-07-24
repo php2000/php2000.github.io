@@ -44,6 +44,14 @@ h3 {
   text-align: left;
 }
 
+h4 {
+  padding-top:15px;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+  text-indent: 1em;
+}
+
 pre {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
@@ -115,6 +123,10 @@ a:hover {
   float: left;
   border-radius: 3px;
   margin-top: 20px;
+}
+
+li {
+  text-align: left;
 }
 
 
