@@ -52,6 +52,14 @@ h4 {
   text-indent: 1em;
 }
 
+h4::before {
+  content: "\2022";
+  color: #555;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
 pre {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
