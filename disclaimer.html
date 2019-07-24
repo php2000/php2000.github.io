@@ -5,27 +5,29 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="icon" type="image/jpg" href="Images/LogoDI.png">
         <meta name="author" content="Des gens qui vont à la salle (pas comme Gab...)">
-        <link rel="stylesheet" type="text/css" href="Style/stylearticle.css" />
+        <link rel="stylesheet" type="text/css" href="Style/stylemachinealaver.css" />
         <title>D&eacute;monstration Irr&eacute;futable</title>
     </head>
     <body>
         <!-- The navigation menu -->
 
         <div id="navbar">
-            <a href="index.html">Articles</a> 
+            <a class="active" href="index.html">Articles</a> 
             <a href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
-            <a class="active" href="contact.html">Trombinoscope</a> 
+            <a href="contact.html">Trombinoscope</a> 
             <a href="login.html">Connexion</a> 
         </div>
 
         <main>
-            <div class="feuille">
-                <div class="titreBio">
-                    <img src="Images/Mr_Univers_Naturel.jpg" class="tofID">
-                    <h1>Mr. Univers et rien d'autre</h1>
-                    <pre>Star, rédacteur et administrateur.<br>guillaume1.thomas@epita.fr</pre>
+            <div class="petiteMachineALaverRapide">
+            <div class="bgcontainer">
+                <div id="bigDiv">
+                    <p id="disclaimerLabel">Disclaimer :</p>
+                    <h1 id="jalouxLabel">Les jaloux vont maigrir.</h1>
+                    <button id="retour" onclick="goBack()">Revenir au site<br>(la queue entre les jambes)</button>
                 </div>
+            </div>
             </div>
         </main>
 
@@ -45,6 +47,11 @@
                 document.getElementById("navbar").style.top = "-50px";
                 }
                 prevScrollpos = currentScrollPos;
+            }
+
+            
+            function goBack() {
+            window.history.back();
             }
         </script>
     </body>

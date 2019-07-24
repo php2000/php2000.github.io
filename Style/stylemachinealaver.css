@@ -6,7 +6,11 @@
 
 
 .petiteMachineALaver{
-    animation : rot 600s infinite
+    animation : rot 600s infinite;
+}
+
+.petiteMachineALaverRapide {
+    animation : rot 30s infinite;
 }
 
 @keyframes rot{
@@ -36,3 +40,144 @@
 .right  { justify-content: flex-end;   }
 .bottom { align-items:     flex-end;   }
 .left   { justify-content: flex-start; }
+
+/* Tout  */
+* {box-sizing: border-box}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #9900cc;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+main {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+
+#bigDiv {
+  width: 100%;
+  text-align: center;
+  /* border: 1px solid #555; */
+  padding-left: 10%;
+  padding-right: 10%;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border-radius: 3px;  
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  top: 0;
+  left:0;  
+}
+
+/* .bground {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  width: 101%;
+  opacity: 0.87;
+} */
+
+.bgcontainer {
+  position: relative;
+  border: #555 1px solid;
+}
+
+.bgcontainer::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(../Images/maths-wallpaper.jpg);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  opacity: 0.8;
+}
+
+
+
+/* Disclaimer */
+#disclaimerLabel {
+    margin-top: 18vh;
+    color: #555;
+    text-shadow: 1px 1px 10px #555; 
+  }
+  
+  #jalouxLabel {
+    padding: 30px;
+    border: solid 1px #555;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px #555;
+    text-shadow: 1px 1px 10px #555;
+    font-size: 2.5em;
+  }
+  
+  #retour {
+    margin-top:8vh;
+    margin-bottom:2vh;
+  }
+
+
+  button {
+    background-color: #9900cc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 5px 5px 20px #555;  
+  }
+
+
+
+  /* Pour la nav bar */
+
+#navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    position: fixed;
+    transition-property: top;
+    transition-duration: 0.3s;
+    top: 0;
+  }
+  
+  #navbar a {
+    float: left;
+    white-space: nowrap; /* Pour pas que "machine a laver" aille a la ligne*/
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Five links of equal widths */
+    text-align: center;
+  }
+  
+  #navbar a:hover {
+    background-color: #000;
+    transition: background-color 0.25s;
+  }
+  
+  #navbar a.active {
+    background-color: #9900cc;
+  }
+  
+  @media screen and (max-width: 500px) {
+    #navbar a {
+      float: none;
+      padding: 12px;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }

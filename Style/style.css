@@ -87,6 +87,30 @@ h3::before {
 
 
 
+/* Disclaimer */
+#disclaimerLabel {
+  margin-top: 18vh;
+  color: #555;
+  text-shadow: 1px 1px 10px #555; 
+}
+
+#jalouxLabel {
+  padding: 30px;
+  border: solid 1px #555;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 20px #555;
+  text-shadow: 1px 1px 10px #555;
+  font-size: 2.5em;
+}
+
+#retour {
+  margin-top:8vh;
+  margin-bottom:2vh;
+}
+
+
+
 /*Trombinoscope*/
 .photoTrombi {
   /* width: 250px;
@@ -322,11 +346,6 @@ iframe {
   /* border: solid black 1px; */
   width: 50%;
   margin: auto;
-}
-
-.titre {
-  font-weight: bold;
-  font-size: 20px;
 }
 
 button {
