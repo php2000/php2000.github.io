@@ -120,8 +120,8 @@ h2 {
 
 /* SearchBar */
 #txtRecherche {
-  background-image: url('../Images/searchIcon\ -\ 512x512.png');
-  background-position: 10px 12px;
+  background-image: url('../Images/searchIcon_25x25.png');
+  background-position: 7px 8px; /* gauche haut */
   background-repeat: no-repeat;
   width: 100%;
   font-size: 16px;
