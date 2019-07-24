@@ -138,6 +138,16 @@ li {
   text-align: left;
 }
 
+button {
+  background-color: #9900cc;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 2px; 
+}
+
 
 
 
