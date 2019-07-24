@@ -46,7 +46,7 @@ h3 {
 
 h4 {
   padding-top:15px;
-  font-size: 16px;
+  font-size: 1em;
   color: #555;
   text-align: left;
   text-indent: 1em;
@@ -57,7 +57,9 @@ h4::before {
   color: #555;
   font-weight: bold;
   display: inline-block;
-  width: 1em;
+  width: 1em;  
+  margin-left: -1em;
+  margin-right: 1em;
 }
 
 pre {
@@ -147,6 +149,21 @@ button {
   border-radius: 2px; 
 }
 
+img {
+  border-radius: 2px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.moyenneimg {
+  width: 200px;
+}
+
+.petiteimg {
+  width: 100px;
+}
 
 
 
