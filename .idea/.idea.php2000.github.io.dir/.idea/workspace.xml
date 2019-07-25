@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b611c766-8c04-4268-b60c-1fc3323595ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Style/stylearticle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/stylearticle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html" beforeDir="false" afterPath="$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html" afterDir="false" />
-    </list>
+    <list default="true" id="b611c766-8c04-4268-b60c-1fc3323595ff" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Style/stylearticle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="161" column="12" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
+            <state relative-caret-position="405">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -150,12 +147,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560842209757</updated>
       <workItem from="1560842211151" duration="304000" />
-      <workItem from="1563973609970" duration="16325000" />
+      <workItem from="1563973609970" duration="17269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16629000" />
+    <option name="totallyTimeSpent" value="17573000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,8 +297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Style/stylearticle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="161" column="12" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
+        <state relative-caret-position="405">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="44" />
         </state>
       </provider>
     </entry>
