@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b611c766-8c04-4268-b60c-1fc3323595ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/stylearticle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/stylearticle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html" beforeDir="false" afterPath="$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,20 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="70" column="100" selection-start-line="70" selection-start-column="100" selection-end-line="70" selection-end-column="100" />
+            <state relative-caret-position="333">
+              <caret line="109" column="63" selection-start-line="109" selection-start-column="63" selection-end-line="109" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -36,17 +28,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="343" column="38" selection-start-line="343" selection-start-column="35" selection-end-line="343" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="120" column="22" lean-forward="true" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Style/stylearticle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
+            <state relative-caret-position="148">
+              <caret line="161" column="12" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -58,6 +50,9 @@
       <find>z</find>
       <find>moyenneimg</find>
       <find>img</find>
+      <find>@med</find>
+      <find>des</find>
+      <find>@me</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -73,9 +68,9 @@
         <option value="$PROJECT_DIR$/Style/style.css" />
         <option value="$PROJECT_DIR$/../../Whojo.github.io/Style/Helpers.css" />
         <option value="$PROJECT_DIR$/checkcie.html" />
-        <option value="$PROJECT_DIR$/Style/stylearticle.css" />
-        <option value="$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html" />
+        <option value="$PROJECT_DIR$/Style/stylearticle.css" />
       </list>
     </option>
   </component>
@@ -155,12 +150,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560842209757</updated>
       <workItem from="1560842211151" duration="304000" />
-      <workItem from="1563973609970" duration="15218000" />
+      <workItem from="1563973609970" duration="16325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15522000" />
+    <option name="totallyTimeSpent" value="16629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -236,13 +231,6 @@
     <entry file="file://$PROJECT_DIR$/Images/searchIcon_25x25.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Whojo.github.io/Style/Helpers.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="67" selection-start-line="67" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tomlepeigne.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -282,31 +270,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Whojo.github.io/Style/Helpers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" selection-start-line="30" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="343" column="38" selection-start-line="343" selection-start-column="35" selection-end-line="343" selection-end-column="38" />
+        <state relative-caret-position="120">
+          <caret line="120" column="22" lean-forward="true" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TomEstUnPeigneEtRienDAutre.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="70" column="100" selection-start-line="70" selection-start-column="100" selection-end-line="70" selection-end-column="100" />
+        <state relative-caret-position="333">
+          <caret line="109" column="63" selection-start-line="109" selection-start-column="63" selection-end-line="109" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Style/stylearticle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="161" column="14" selection-start-line="161" selection-start-column="14" selection-end-line="161" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+        <state relative-caret-position="148">
+          <caret line="161" column="12" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
         </state>
       </provider>
     </entry>
