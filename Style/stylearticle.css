@@ -158,8 +158,12 @@ img {
   margin-bottom: 10px;
 }
 
+.grandeimg {
+    width: 80%;
+}
+
 .moyenneimg {
-  width: 200px;
+    width: 200px;
 }
 
 .petiteimg {
