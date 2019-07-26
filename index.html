@@ -18,7 +18,6 @@
             <a href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
             <a href="contact.html">Trombinoscope</a> 
-            <a href="disclaimer.html">Connexion</a> 
         </div>
 
         <main>
@@ -41,6 +40,27 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="bgcontainer">            
+                <div id="bigDiv"> 
+                    <p style="margin-top:10vh; font-size: 1.1em;">Free citation :</p>
+                    <blockquote class="citation"><p>Les jaloux vont maigrir.</p><a href="descTri.html" class="auteur">Tri</a></blockquote>
+                    <blockquote class="citation"><p>Mourrez tous. Encore.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                    <blockquote class="citation"><p>Donne tout.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                    <blockquote class="citation"><p>Indeed.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                    <blockquote class="citation"><p>P<font color="#9900cc">u</font>R<font color="#9900cc">p</font>L<font color="#9900cc">e</font> et rien d'autre.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                    <blockquote class="citation"><p>Les gars, je get copined.</p><a href="descGab.html" class="auteur">Gab</a></blockquote>
+                    <blockquote class="citation"><p>Abonnez-vous.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                    <blockquote class="citation"><p>Espèce de nulz.</p><a href="descFifi.html" class="auteur">Fifi</a></blockquote>
+                    <blockquote class="citation"><p>Tu donnes quoi sur une échelle de 1 à tout ?</p><a href="descTri.html" class="auteur">Tri</a></blockquote>
+                    <blockquote class="citation"><p>Meurs !</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                    <blockquote class="citation"><p>T'es mauvais.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                    <blockquote class="citation"><p>Gab, t'es qui dans l'esport ?</p><a href="contact.html" class="auteur">Plèbe, à Gab</a></blockquote>
+                    <blockquote class="citation"><p>Get suaved.</p><a href="descFifi.html" class="auteur">Fifi</a></blockquote>
+                    <blockquote class="citation"><p>Perdu c'est perdu.</p><a href="descFifi.html" class="auteur">Fifi</a></blockquote>
+                    <blockquote class="citation"><p>Tu donnes pas tout, là ?</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
+                </div>
+            </div>
             
         </main>
 
@@ -56,6 +76,9 @@
         <script type="text/javascript"> 
 
             var prevScrollpos = window.pageYOffset;
+            var citations = document.getElementsByClassName("citation");
+            var citationAffichee = citations[Math.floor(Math.random()*citations.length)];
+            citationAffichee.style.display = "inline-block";
             
             window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
             {
@@ -71,7 +94,6 @@
             
             document.getElementById("txtRecherche").onclick = function() 
             { 
-                // document.write("click");
                 ul = document.getElementById("articleList");
                 li = ul.getElementsByTagName("li");
                 for (i = 0; i < li.length; i++)

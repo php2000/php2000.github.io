@@ -102,41 +102,38 @@ main {
   opacity: 0.8;
 }
 
-
+p {
+  color: #555;
+  text-shadow: 1px 1px 10px #555; 
+}
 
 /* Disclaimer */
-#disclaimerLabel {
-    margin-top: 18vh;
-    color: #555;
-    text-shadow: 1px 1px 10px #555; 
-  }
-  
-  #jalouxLabel {
-    padding: 30px;
-    border: solid 1px #555;
-    margin-bottom: 40px;
-    border-radius: 3px;
-    box-shadow: 5px 5px 20px #555;
-    text-shadow: 1px 1px 10px #555;
-    font-size: 2.5em;
-  }
-  
-  #retour {
-    margin-top:8vh;
-    margin-bottom:2vh;
-  }
+#jalouxLabel {
+  padding: 30px;
+  border: solid 1px #555;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 20px #555;
+  text-shadow: 1px 1px 10px #555;
+  font-size: 2.5em;
+}
+
+#retour {
+  margin-top:8vh;
+  margin-bottom:2vh;
+}
 
 
-  button {
-    background-color: #9900cc;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 17px;
-    cursor: pointer;
-    border-radius: 2px;
-    box-shadow: 5px 5px 20px #555;  
-  }
+button {
+  background-color: #9900cc;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 5px 5px 20px #555;  
+}
 
 
 
@@ -150,6 +147,7 @@ main {
     transition-property: top;
     transition-duration: 0.3s;
     top: 0;
+    z-index: 2;
   }
   
   #navbar a {
@@ -159,7 +157,7 @@ main {
     color: white;
     text-decoration: none;
     font-size: 17px;
-    width: 20%; /* Five links of equal widths */
+    width: 25%; /* Five links of equal widths */
     text-align: center;
   }
   

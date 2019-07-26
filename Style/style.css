@@ -58,6 +58,16 @@ main {
   opacity: 0.8;
 }
 
+h1 {
+  padding: 12px;
+  border: solid 1px #555;
+  color: #000;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 20px #555;
+  text-shadow: 1px 1px 10px #555;
+  font-style: italic;
+}
 
 h2 {
   padding: 12px;
@@ -85,15 +95,74 @@ h3::before {
   width: 1em;
 }
 
-
-
-/* Disclaimer */
-#disclaimerLabel {
-  margin-top: 18vh;
+p {
   color: #555;
   text-shadow: 1px 1px 10px #555; 
 }
 
+/* citation index */
+.citation{
+  display: none;
+  margin: auto;
+  /* padding: 12px; */
+  border: solid 1px #555;
+  /* margin-bottom: 40px; */
+  border-radius: 3px;
+  box-shadow: 5px 5px 20px #555;
+  text-shadow: 1px 1px 10px #555;
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 15vh;
+}
+
+blockquote p {
+  quotes: "\201C""\201D""\2018""\2019";
+  color: black;
+  padding-left:12px;
+  padding-right: 15px;
+  font-weight: bolder;
+}
+
+blockquote p:before{
+  content: open-quote;
+  font-family:Georgia, "Times New Roman", Times, serif;  font-weight: bolder;
+  font-size:2.5em;
+  color:#9900cc;
+}
+
+blockquote p:after{
+  content: close-quote;
+  font-family:Georgia, "Times New Roman", Times, serif;  font-weight: bolder;
+  font-size:2.5em;
+  color:#9900cc;
+}
+
+blockquote a {
+  float: right;
+  margin-right: 0.7em;
+  font-size: 0.6em;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 10px #555; 
+}
+
+blockquote a::before {
+  font-family:Georgia, "Times New Roman", Times, serif;
+  content: "~";
+}
+
+.auteur:link {
+  color: #555;
+  text-decoration: none;
+}
+.auteur:visited {
+  color: #555;
+}
+.auteur:hover {
+  color: #9900cc;
+}
+
+
+/* Disclaimer */
 #jalouxLabel {
   padding: 30px;
   border: solid 1px #555;
@@ -255,9 +324,9 @@ h3::before {
   border-radius: 6px;
   padding: 6px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   bottom: 130%;
-  left: 3%;
+  left: 8%;
   /* Fade in - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
   transition: opacity 0.3s;
@@ -295,6 +364,7 @@ h3::before {
   transition-property: top;
   transition-duration: 0.3s;
   top: 0;
+  z-index: 2;
 }
 
 #navbar a {
@@ -304,7 +374,7 @@ h3::before {
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 20%; /* Five links of equal widths */
+  width: 25%; /* Five links of equal widths */
   text-align: center;
 }
 
