@@ -21,25 +21,9 @@
 
         <main>
             <div class="tooltip">
-                <span class="tooltiptext">Useless for now x)</span>             
+                <span class="tooltiptexttop">Useless for now x)</span>             
                 <input type="number" id="txtRecherche" onkeyup="searchBarFunc()" placeholder="Rechercher une vid&eacute;o..." title="Recherche Article">      
             </div> 
-            <div class="propositions">                
-                <ul id="articleList">
-                    <li><a href="#">Tom est un peigne gauche</a></li>
-                    <li><a href="#">Tuto salle : les pro-tips &agrave; conna&icirc;tre</a></li>
-                    <li><a href="#">Fifi s'habitue toujours</a></li>                
-                    <li><a href="#">Formation Mayday</a></li>
-                    <li><a href="#">Gab est inexistant dans l'esport</a></li>
-                    <li><a href="#">L'art du check CIE</a></li>
-                    <li><a href="#">La Guillaume Mobile et ses superpouvoirs</a></li>
-                    <li><a href="#">Th&eacute;orie du folklore</a></li>
-                    <li><a href="#">Le jet de folklore</a></li>
-                    <li><a href="#">Chocapics : le r&eacute;sultat universel</a></li>
-                    <li><a href="#">Lootbox : la th&eacute;orie du micro-ondes</a></li>
-                </ul>
-            </div>
-
 
             
             <div class="bgcontainer">
@@ -47,12 +31,12 @@
                     <div>
                         <div style="position: relative; margin-top:20px;">
                             <div class="tooltip" id="divPrevButton">
-                                <span class="tooltiptext" id="divPrevButtonText" style="left: -10%; bottom: 115%">Ce n'est que le début</span>
+                                <span class="tooltiptextleft" id="divPrevButtonText">Ce n'est que le début</span>
                                 <button type="button" id="prevBtn" style="top: 50%; right: 100%;" onclick="nextPrev(-1)"></button>
                             </div>
                             <div id="player"></div> <!-- sera remplacé par la video en js -->
                             <div class="tooltip" id="divNextButton">
-                                <span class="tooltiptext" id="divNextButtonText"  style="left: 0%; bottom: 115%">Dites m'en plus</span>
+                                <span class="tooltiptextright" id="divNextButtonText"  style="left: 0%; bottom: 115%">Dites m'en plus</span>
                                 <button type="button" id="nextBtn" onclick="nextPrev(1)"></button>
                             </div>
                         </div>
