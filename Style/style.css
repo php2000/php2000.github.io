@@ -263,8 +263,8 @@ blockquote a::before {
   background-position: 7px 8px; /* gauche haut */
   background-repeat: no-repeat;
   width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
+  font-size: 1em;
+  padding: 12px 20px 12px 45px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
   border-radius: 3px;  
@@ -312,7 +312,6 @@ blockquote a::before {
   width: 100%;
   position: relative;
   display: inline-block;
-  /* border: 1px solid black; */
 }
 
 .tooltip .tooltiptext {
@@ -369,7 +368,7 @@ blockquote a::before {
 
 #navbar a {
   float: left;
-  white-space: nowrap; /* Pour pas que "machine a laver" aille a la ligne*/
+  white-space: nowrap; /* Pour ne pas que "machine a laver" aille a la ligne*/
   padding: 12px;
   color: white;
   text-decoration: none;
@@ -404,69 +403,113 @@ blockquote a::before {
 
 
 /* Pour les videos */
-iframe {  
+iframe {
   width: 20vw; 
   height: 35vw;
-  margin-bottom: 30px;
   border: 2px solid #555;
   border-radius: 3px;
   background-color: #555;
-  /* background-image: url(https://img.youtube.com/vi/qtHOfcQ6wo0/0.jpg);
-  background-repeat: no-repeat; */
   box-shadow: 5px 5px 20px #555;
+  display: inline-block;
 }
 
-.tab {
-  display: none; /* Hide all steps by default: */
-  /* border: solid black 1px; */
-  width: 50%;
-  margin: auto;
-}
 
 button {
   background-color: #9900cc;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 1em;
   cursor: pointer;
-  border-radius: 2px;
-  box-shadow: 5px 5px 20px #555;  
+  box-shadow: 5px 5px 20px #555;
+  display: inline-block;
+}
+
+button:disabled {
+  box-shadow: none;
 }
 
 #prevBtn {
   background-color: #555;
+  height: 100%;
+  width: 100%;
+  background-image: url(../Images/prev.png);
+  border-radius: 4px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#divPrevButton {
+  display: inline-block;
+  top: 37%;
+  height: 26%;
+  width: 15%; 
+  left: 2%; 
+  position: absolute;
+}
+
+#prevBtn:hover:disabled{
+  transition: transform 0.5s 0.2s;
+  transform: rotate(180deg);
+}
+
+#nextBtn {
+  height: 100%;
+  width: 100%;
+  background-image: url(../Images/next.png);
+  border-radius: 4px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#divNextButton {
+  display: inline-block;
+  top: 37%;
+  height: 26%;
+  width: 15%; 
+  right: 2%; 
+  position: absolute;
+}
+
+#nextBtn:hover:disabled {
+  transition: transform 0.5s 0.2s;
+  transform: rotate(-180deg);
 }
 
 #abonnement{
   margin-top: 20px;
   background-color: #ff0000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  border-radius: 2px;
 }
 
-button:hover {
+button:hover:enabled {
   opacity: 0.8;
 }
 
-/* Make circles that indicate the steps of the form: */
+
+
+/* Make circles that indicate the steps: */
 .step {
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #555;
-  border: none;  
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-  box-shadow: 5px 5px 20px #555;  
+height: 12px;
+width: 12px;
+margin: 0 2px;
+background-color: #555;
+border: none;  
+border-radius: 50%;
+display: inline-block;
+opacity: 0.5;
+box-shadow: 5px 5px 20px #555;  
 }
 
 .step.active {
-  opacity: 1;
-  background-color: #9900cc;
+opacity: 1;
+background-color: #9900cc;
 }
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #9900cc;
+background-color: #9900cc;
 }
