@@ -31,12 +31,12 @@
                     <div>
                         <div style="position: relative; margin-top:20px;">
                             <div class="tooltip" id="divPrevButton">
-                                <span class="tooltiptextleft" id="divPrevButtonText">Ce n'est que le début</span>
+                                <!-- <span class="tooltiptextleft" id="divPrevButtonText">Ce n'est que le début</span> -->
                                 <button type="button" id="prevBtn" style="top: 50%; right: 100%;" onclick="nextPrev(-1)"></button>
                             </div>
                             <div id="player"></div> <!-- sera remplacé par la video en js -->
                             <div class="tooltip" id="divNextButton">
-                                <span class="tooltiptextright" id="divNextButtonText"  style="left: 0%; bottom: 115%">Dites m'en plus</span>
+                                <!-- <span class="tooltiptextright" id="divNextButtonText"  style="left: 0%; bottom: 115%">Dites m'en plus</span> -->
                                 <button type="button" id="nextBtn" onclick="nextPrev(1)"></button>
                             </div>
                         </div>
@@ -100,28 +100,28 @@
                 if (index <= 0)
                 {
                     prev.disabled = true;
-                    document.getElementById("divPrevButtonText").innerHTML = "Ce n'est que le début";
+                    // document.getElementById("divPrevButtonText").innerHTML = "Ce n'est que le début";
                     prev.style.backgroundColor = "#555";
                     next.disabled = false;
-                    document.getElementById("divNextButtonText").innerHTML = "Dites m'en plus";
+                    // document.getElementById("divNextButtonText").innerHTML = "Dites m'en plus";
                     next.style.backgroundColor = "#9900cc";
                 }
                 else if (index >= maxIndex)
                 {
                     prev.disabled = false;
-                    document.getElementById("divPrevButtonText").innerHTML = "C'est trop";
+                    // document.getElementById("divPrevButtonText").innerHTML = "C'est trop";
                     prev.style.backgroundColor = "#9900cc";
                     next.disabled = true;
-                    document.getElementById("divNextButtonText").innerHTML = "Fin du game";
+                    // document.getElementById("divNextButtonText").innerHTML = "Fin du game";
                     next.style.backgroundColor = "#555";
                 }
                 else
                 {
                     prev.disabled = false;
-                    document.getElementById("divPrevButtonText").innerHTML = "C'est trop";
+                    // document.getElementById("divPrevButtonText").innerHTML = "C'est trop";
                     prev.style.backgroundColor = "#9900cc";
                     next.disabled = false;
-                    document.getElementById("divNextButtonText").innerHTML = "Dites m'en plus";
+                    // document.getElementById("divNextButtonText").innerHTML = "Dites m'en plus";
                     next.style.backgroundColor = "#9900cc";
                 }
                 player.playVideoAt(index);
