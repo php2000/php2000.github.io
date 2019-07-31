@@ -20,14 +20,20 @@
 
 
         <main>
-            <div class="tooltip">
-                <span class="tooltiptexttop">Useless for now x)</span>             
-                <input type="number" id="txtRecherche" onkeyup="searchBarFunc()" placeholder="Rechercher une vid&eacute;o..." title="Recherche Article">      
-            </div> 
+            <!-- <div style="width: 100%; text-align: right;">
+                <div class="entete">
+                    <input type="number" id="txtRechercheVideo" value="13">
+                    <p id="p_recherche">Rechercher un fat épisode :</p>
+                </div>
+            </div> -->
 
             
             <div class="bgcontainer">
-                <div id="bigDiv">                    
+                <div id="bigDiv">
+                    <div class="entete">
+                        <input type="number" id="txtRechercheVideo" min="1" max="100" onchange="SetIndex()" value="1">
+                        <p id="p_recherche">Rechercher un fat épisode :</p>
+                    </div>               
                     <div>
                         <div style="position: relative; margin-top:20px;">
                             <div class="tooltip" id="divPrevButton">
@@ -59,6 +65,7 @@
             var index = 0;
             document.getElementById("prevBtn").disabled = true;
             var maxIndex = 12;
+            document.getElementById("txtRechercheVideo").setAttribute("max", maxIndex + 1);
 
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player',{
@@ -142,8 +149,19 @@
 
             function nextPrev(n)
             {
-                index += n;                
+                index += n;
+                document.getElementById("txtRechercheVideo").value = index + 1;            
                 next();
+            }
+
+            function SetIndex()
+            {
+                value = document.getElementById("txtRechercheVideo").value;
+                if (value > 0 && value <= maxIndex + 1)
+                {
+                    index = value - 1;
+                    next();
+                }
             }
 
             
