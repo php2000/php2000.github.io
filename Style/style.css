@@ -506,6 +506,7 @@ blockquote a::before {
   padding: 0;
   box-shadow: 5px 5px 20px #555;
   width: 40%;
+  min-width: 300px;
 }
 
 #p_recherche {
