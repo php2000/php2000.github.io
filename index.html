@@ -7,7 +7,8 @@
         <meta name="author" content="Des gens qui vont à la salle (pas comme Gab...)">
         <meta name="description" content="Des démonstrations qui sont réellement irréfutables (genre on n'a pas menti).">
         <meta name="keywords" content="Demonstration, démonstration, irréfutables, Savoir, Culture, Irrefutable, Indispensable, Nécessaire à la survie de l'humanité">
-        <link rel="stylesheet" type="text/css" href="Style/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 700px)" href="Style/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 700px)" href="Style/styleMobile.css" />
         <title>D&eacute;monstration Irr&eacute;futable</title>
     </head>
     <body>
@@ -18,6 +19,7 @@
             <a href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
             <a href="contact.html">Trombinoscope</a> 
+            <button id="navButton" onclick="showMobileMenu()"></button>
         </div>
 
         <main>
@@ -87,14 +89,45 @@
             window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
             {
                 var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
+                if (prevScrollpos > currentScrollPos) 
+                {
+                    document.getElementById("navbar").style.top = "0";
+                    document.getElementById("navButton").style.top = "1%";
                 } 
-                else {
-                document.getElementById("navbar").style.top = "-50px";
+                else 
+                {
+                    document.getElementById("navbar").style.top = "-200px";
+                    document.getElementById("navButton").style.top = "-200px";
                 }
                 prevScrollpos = currentScrollPos;
             }
+
+            var menuIsDeployed = false;
+            var navB = document.getElementById("navbar");
+            var navATagList = navB.getElementsByTagName("a");
+            function showMobileMenu()
+            {
+                navB = document.getElementById("navbar");
+                navATagList = navB.getElementsByTagName("a");
+                if (menuIsDeployed)
+                {
+                    menuIsDeployed = false;
+                    for (i = 0; navATagList.length; i++)
+                    {
+                        navATagList[i].style.display = "none";
+                    }     
+                }
+                else
+                {
+                    menuIsDeployed = true;
+                    for (i = 0; navATagList.length; i++)
+                    {
+                        navATagList[i].style.display = "block";
+                    }                    
+                }
+            }
+
+
             
             document.getElementById("txtRecherche").onclick = function() 
             { 

@@ -10,6 +10,7 @@
     <body>
         <!-- The navigation menu -->
         <div id="navbar">
+            <button id="navButton" onclick="showMobileMenu()"></button>
             <a href="index.html">Articles</a> 
             <a href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
@@ -71,6 +72,16 @@
                 document.getElementById("navbar").style.top = "-50px";
                 }
                 prevScrollpos = currentScrollPos;
+            }
+
+            function showMobileMenu()
+            {
+                var navB = document.getElementById("navbar");
+                var navATagList = navB.getElementsByTagName("a");
+                for (i = 0; navATagList.length; i++)
+                {
+                    navATagList[i].style.display = "block";
+                }
             }
         </script>
     </body>

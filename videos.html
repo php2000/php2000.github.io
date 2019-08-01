@@ -5,11 +5,13 @@
         <title>D&eacutemonstration Irr&eacutefutable</title>
         <link rel="icon" type="image/jpg" href="Images/LogoDI.png">
         <!-- <link rel="shortcut icon" href="logo.ico"> -->
-        <link rel="stylesheet" type="text/css" href="Style/style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 700px)" href="Style/style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 700px)" href="Style/styleMobile.css" />
     </head>
     <body>
         <!-- The navigation menu -->
         <div id="navbar">
+            <button id="navButton" onclick="showMobileMenu()"></button>
             <a href="index.html">Articles</a> 
             <a class="active" href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
@@ -181,6 +183,16 @@
                 document.getElementById("navbar").style.top = "-50px";
                 }
                 prevScrollpos = currentScrollPos;
+            }
+
+            function showMobileMenu()
+            {
+                var navB = document.getElementById("navbar");
+                var navATagList = navB.getElementsByTagName("a");
+                for (i = 0; navATagList.length; i++)
+                {
+                    navATagList[i].style.display = "block";
+                }
             }
         </script>
     </body>

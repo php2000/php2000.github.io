@@ -436,6 +436,10 @@ blockquote a::before {
 
 
 
+
+
+
+
 /* Pour la nav bar */
 
 #navbar {
@@ -447,6 +451,10 @@ blockquote a::before {
   transition-duration: 0.3s;
   top: 0;
   z-index: 2;
+}
+
+#navButton {
+  display: none;
 }
 
 #navbar a {
@@ -478,6 +486,10 @@ blockquote a::before {
     text-align: left;
   }
 }
+
+
+
+
 
 
 
