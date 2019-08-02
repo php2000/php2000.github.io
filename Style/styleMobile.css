@@ -30,7 +30,7 @@ main {
 .bgcontainer {
     position: relative;
     /* border: black 10px solid; */
-    height:79vh;
+    height:95vh;
 }
     
 .bgcontainer::before{
@@ -53,6 +53,7 @@ footer {
     color: white;
     font-size: 2em;
     padding:1px;
+    margin-top:0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -358,6 +359,7 @@ blockquote a::before {
 iframe {
     /* width: 20vw;height: 35vw; */
     margin-top: 10vw;
+    margin-bottom: 10vw;
     width: 52vw; 
     height: 91vw;
     border: 2px solid #555;
@@ -387,10 +389,10 @@ button:disabled {
   
 #divPrevButton {
     display: inline-block;
-    top: 35%;
-    height: 30%;
-    width: 8%; 
-    left: 23%;   
+    top: 30%;
+    height: 25%;
+    width: 13%; 
+    left: 2%;   
     position: absolute;
     /* border: solid red 1px; */
 }
@@ -416,10 +418,10 @@ button:disabled {
   
 #divNextButton {
     display: inline-block;
-    top: 35%;
-    height: 30%;
-    width: 8%; 
-    right: 23%; 
+    top: 30%;
+    height: 25%;
+    width: 13%; 
+    right: 2%; 
     position: absolute;
 }
   
@@ -436,7 +438,8 @@ button:disabled {
     font-size: 2em;
     color: white;
     box-shadow: 5px 5px 20px #555;
-    margin-top: 20%;
+    /* margin-top: 20%; */
+    
 }
 
 button {
