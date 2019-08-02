@@ -102,6 +102,11 @@ p {
 }
 
 /* citation index */
+#freeCitation {
+  margin-top:8%; 
+  font-size: 1.1em;
+}
+
 .citation{
   display: none;
   margin: auto;

@@ -2,12 +2,57 @@
 * {box-sizing: border-box}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin: 0;
-  background-color: #9900cc;
-  font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #9900cc;
+    font-size: 1em;
+    border: none;
 }
+
+main {
+    margin:0;
+    margin-top: 50px;
+}
+    
+#bigDiv {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 3px;
+    margin-top: 20%;
+    position: relative;
+    /* border: solid 10px red; */
+}
+    
+.bgcontainer {
+    position: relative;
+    /* border: black 10px solid; */
+    height:79vh;
+}
+    
+.bgcontainer::before{
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: 0;
+    width: 100%; 
+    height: 210%;
+    background-image: url(../Images/maths-wallpaper.jpg);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    opacity: 0.8;
+    display: block;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -39,8 +84,8 @@ body {
     text-decoration: none;
     width: 100%;
     text-align: left;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 5%;
     color: white;
 }
@@ -59,6 +104,187 @@ body {
     transition-duration: 0.3s;
     box-shadow: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SearchBar */
+#txtRecherche {
+    /* position: absolute;
+    top:70px;
+    left:10%; */
+    background-image: url('../Images/searchIcon_25x25.png');
+    background-size: 2em;
+    background-position-x: 0.5em;
+    background-position-y: 0.4em; 
+    background-repeat: no-repeat;
+    width: 80%;
+    padding: 30px;
+    padding-left: 3em;
+    border: 1px solid #9900cc;
+    border-radius: 5px;
+    font-size: 2em;
+    display: block;
+    z-index: 1;
+    box-shadow: 5px 5px 20px #555;
+    margin: auto;
+  }
+  
+  #articleList {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+  }
+  
+  #articleList li {
+    display: none;
+    background-color: #f6f6f6;
+  }
+  
+  #articleList li a {
+    padding: 30px;
+    padding-left: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 0px;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    display: block;
+    text-indent: 1.5em;
+    box-shadow: 5px 5px 20px #555;
+  }
+  
+  .propositions {
+    text-align: left;
+  }
+  
+  
+  
+  /* ToolTip "Donne tout." */
+  
+  .tooltip {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    /* border: solid 1px black; */
+    margin-top: 130px;
+  }
+
+  .tooltiptexttop {
+      display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* citation index */
+#freeCitation {
+    font-size: 1.8em;
+    color: #555;
+}
+
+.citation{
+    display: none;
+    margin: auto;
+    border: solid 1px #555;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #555;
+    text-shadow: 1px 1px 10px #555;
+    font-style: italic;
+    font-size: 5em;
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 90%;
+}
+  
+blockquote p {
+    quotes: "\201C""\201D""\2018""\2019";
+    color: black;
+    font-weight: bolder;
+}
+  
+blockquote p:before {
+    position: absolute;
+    top: 80px;
+    left:40px;
+    content: open-quote;
+    font-family:Georgia, "Times New Roman", Times, serif;  font-weight: bolder;
+    font-size:3em;
+    color:#9900cc;
+}
+  
+blockquote p:after{
+    position: absolute;
+    bottom: 0;
+    right:60px;
+    content: close-quote;
+    font-family:Georgia, "Times New Roman", Times, serif;  font-weight: bolder;
+    font-size: 3em;
+    color:#9900cc;
+}
+  
+blockquote a {
+    float: right;
+    margin-right: 0;
+    font-size: 0.6em;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 10px #555; 
+}
+  
+blockquote a::before {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    content: "~";
+}
+  
+.auteur:link {
+    color: #555;
+    text-decoration: none;
+}
+
+.auteur:visited {
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
