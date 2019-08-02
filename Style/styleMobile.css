@@ -25,10 +25,12 @@ body {
     z-index: 2;
     transition-property: top;
     transition-duration: 0.3s;
+    display: block;
 }
 
 #navbar a.active {
     display: block;
+    border: solid 1px #555;
 }
 
 #navbar a {
@@ -55,6 +57,7 @@ body {
     border: none;    
     transition-property: top;
     transition-duration: 0.3s;
+    box-shadow: none;
 }
 
 

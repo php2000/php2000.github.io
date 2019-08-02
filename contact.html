@@ -58,31 +58,6 @@
 
 
 
-        <script type="text/javascript"> 
-
-            var prevScrollpos = window.pageYOffset;
-            
-            window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
-            {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-                } 
-                else {
-                document.getElementById("navbar").style.top = "-50px";
-                }
-                prevScrollpos = currentScrollPos;
-            }
-
-            function showMobileMenu()
-            {
-                var navB = document.getElementById("navbar");
-                var navATagList = navB.getElementsByTagName("a");
-                for (i = 0; navATagList.length; i++)
-                {
-                    navATagList[i].style.display = "block";
-                }
-            }
-        </script>
+        <script type="text/javascript" src="generalJS.js"></script>
     </body>
 </html>

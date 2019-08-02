@@ -6,6 +6,7 @@
         <link rel="icon" type="image/jpg" href="Images/LogoDI.png">
         <meta name="author" content="Des gens qui vont à la salle (pas comme Gab...)">
         <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 700px)" href="Style/stylemachinealaver.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 700px)" href="Style/styleMobileMachineALaver.css" />
         <title>D&eacute;monstration Irr&eacute;futable</title>
     </head>
     <body>
@@ -16,14 +17,15 @@
             <a href="videos.html">Vid&eacuteos</a> 
             <a class="active" href="disclaimer.html">Disclaimer</a>
             <a href="contact.html">Trombinoscope</a> 
+            <button id="navButton" onclick="popMobileNavBar()"></button>
         </div>
 
         <main>
             <div class="petiteMachineALaverRapide">
             <div class="bgcontainer">
                 <div id="bigDiv">
-                    <p style="margin-top: 18vh;">Disclaimer :</p>
-                    <h1 id="jalouxLabel">Les jaloux vont maigrir.</h1>
+                    <p>Disclaimer :</p>
+                    <h1 id="jalouxLabel">Les jaloux vont maigrir.</h1><br>
                     <button id="retour" onclick="goBack()">Revenir au site<br>(la queue entre les jambes)</button>
                 </div>
             </div>
@@ -32,25 +34,49 @@
 
 
 
-        <script type="text/javascript"> 
+        <!-- <script type="text/javascript" src="generalJS.js"></script> -->
 
-            var prevScrollpos = window.pageYOffset;
-            
-            window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
+        <script type="text/javascript">
+
+        // Sur mobile
+            var menuIsDeployed = false;
+            function popMobileNavBar()
             {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-                } 
-                else {
-                document.getElementById("navbar").style.top = "-50px";
+                var navB = document.getElementById("navbar");
+                var navATagList = navB.getElementsByTagName("a");
+
+                if (menuIsDeployed)
+                {
+                    menuIsDeployed = false;
+                    for (i = 0; navATagList.length; i++)
+                    {
+                        if (navATagList[i] != navB.getElementsByClassName("active")[0])
+                            navATagList[i].style.display = "none";
+                        else
+                        {
+                            navATagList[i].style.display = "block";
+                            navATagList[i].style.backgroundColor = "#555";
+                        }
+
+                    }                   
                 }
-                prevScrollpos = currentScrollPos;
+                else
+                {
+                    menuIsDeployed = true;
+                    for (i = 0; navATagList.length; i++)
+                    {
+                        if (navATagList[i] != navB.getElementsByClassName("active")[0])
+                            navATagList[i].style.display = "block";
+                        else
+                            navATagList[i].style.backgroundColor = "#9900cc";
+                    }                    
+                }
             }
 
-            
-            function goBack() {
-            window.history.back();
+
+            function goBack() 
+            {
+                window.history.back();
             }
         </script>
     </body>

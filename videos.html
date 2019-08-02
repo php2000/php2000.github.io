@@ -11,7 +11,7 @@
     <body>
         <!-- The navigation menu -->
         <div id="navbar">
-            <button id="navButton" onclick="showMobileMenu()"></button>
+            <button id="navButton" onclick="popMobileNavBar()"></button>
             <a href="index.html">Articles</a> 
             <a class="active" href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
@@ -55,6 +55,7 @@
         </main>
 
 
+        <script type="text/javascript" src="generalJS.js"></script>
 
         <script type="text/javascript">
             var tag = document.createElement('script');
@@ -163,35 +164,6 @@
                 {
                     index = value - 1;
                     next();
-                }
-            }
-
-            
-
-
-
-
-            var prevScrollpos = window.pageYOffset;
-            
-            window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
-            {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-                } 
-                else {
-                document.getElementById("navbar").style.top = "-50px";
-                }
-                prevScrollpos = currentScrollPos;
-            }
-
-            function showMobileMenu()
-            {
-                var navB = document.getElementById("navbar");
-                var navATagList = navB.getElementsByTagName("a");
-                for (i = 0; navATagList.length; i++)
-                {
-                    navATagList[i].style.display = "block";
                 }
             }
         </script>

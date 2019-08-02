@@ -19,7 +19,7 @@
             <a href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
             <a href="contact.html">Trombinoscope</a> 
-            <button id="navButton" onclick="showMobileMenu()"></button>
+            <button id="navButton" onclick="popMobileNavBar()"></button>
         </div>
 
         <main>
@@ -77,7 +77,7 @@
 
 
 
-
+        <script type="text/javascript" src="generalJS.js"></script>
 
         <script type="text/javascript"> 
 
@@ -85,47 +85,6 @@
             var citations = document.getElementsByClassName("citation");
             var citationAffichee = citations[Math.floor(Math.random()*citations.length)];
             citationAffichee.style.display = "inline-block";
-            
-            window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
-            {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) 
-                {
-                    document.getElementById("navbar").style.top = "0";
-                    document.getElementById("navButton").style.top = "1%";
-                } 
-                else 
-                {
-                    document.getElementById("navbar").style.top = "-200px";
-                    document.getElementById("navButton").style.top = "-200px";
-                }
-                prevScrollpos = currentScrollPos;
-            }
-
-            var menuIsDeployed = false;
-            var navB = document.getElementById("navbar");
-            var navATagList = navB.getElementsByTagName("a");
-            function showMobileMenu()
-            {
-                navB = document.getElementById("navbar");
-                navATagList = navB.getElementsByTagName("a");
-                if (menuIsDeployed)
-                {
-                    menuIsDeployed = false;
-                    for (i = 0; navATagList.length; i++)
-                    {
-                        navATagList[i].style.display = "none";
-                    }     
-                }
-                else
-                {
-                    menuIsDeployed = true;
-                    for (i = 0; navATagList.length; i++)
-                    {
-                        navATagList[i].style.display = "block";
-                    }                    
-                }
-            }
 
 
             

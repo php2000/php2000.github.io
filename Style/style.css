@@ -163,21 +163,6 @@ blockquote a::before {
 }
 
 
-/* Disclaimer */
-#jalouxLabel {
-  padding: 30px;
-  border: solid 1px #555;
-  margin-bottom: 40px;
-  border-radius: 3px;
-  box-shadow: 5px 5px 20px #555;
-  text-shadow: 1px 1px 10px #555;
-  font-size: 2.5em;
-}
-
-#retour {
-  margin-top:8vh;
-  margin-bottom:2vh;
-}
 
 
 
@@ -262,6 +247,16 @@ blockquote a::before {
   -webkit-filter: blur(1.5px); /* Safari 6.0 - 9.0 */
   filter: blur(1.5px);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -431,6 +426,9 @@ blockquote a::before {
   visibility: visible;
   opacity: 1;
 }
+
+
+
 
 
 
