@@ -42,7 +42,7 @@
                                 <!-- <span class="tooltiptextleft" id="divPrevButtonText">Ce n'est que le début</span> -->
                                 <button type="button" id="prevBtn" style="top: 50%; right: 100%;" onclick="nextPrev(-1)"></button>
                             </div>
-                            <div id="player" style="width: 20vw;height: 35vw;"></div> <!-- sera remplacé par la video en js -->
+                            <div id="player"></div> <!-- sera remplacé par la video en js -->
                             <div class="tooltip" id="divNextButton">
                                 <!-- <span class="tooltiptextright" id="divNextButtonText"  style="left: 0%; bottom: 115%">Dites m'en plus</span> -->
                                 <button type="button" id="nextBtn" onclick="nextPrev(1)"></button>
@@ -53,6 +53,22 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <p>N'hésitez pas à tout donner.</p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <script type="text/javascript" src="generalJS.js"></script>
@@ -143,9 +159,15 @@
                 if (event.data == YT.PlayerState.ENDED) 
                 {
                     if (index < maxIndex)
+                    {
                         index += 1;
+                        document.getElementById("txtRechercheVideo").value = index + 1; 
+                    }
                     else
+                    {
                         index = 0;
+                        document.getElementById("txtRechercheVideo").value = 1; 
+                    }
                     next();
                 }        
             }

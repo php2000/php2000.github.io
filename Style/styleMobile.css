@@ -13,6 +13,8 @@ body {
 main {
     margin:0;
     margin-top: 50px;
+    /* margin-left:30px;
+    margin-right:30px; */
 }
     
 #bigDiv {
@@ -45,6 +47,19 @@ main {
     display: block;
     z-index: -1;
 }
+
+footer {
+    background-color: #555;
+    color: white;
+    font-size: 2em;
+    padding:1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
 
 
 
@@ -292,5 +307,144 @@ blockquote a::before {
 
 /* Pour les videos */
 
+#txtRechercheVideo {
+    font-size: 2em;
+    /* border: 1px solid #ddd; */
+    border:none;
+    border-radius: 3px;
+    float: right;
+    width: 20%; 
+    border: solid #555 1px;
+    box-shadow: 5px 5px 20px #555;
+    z-index: 1;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+}
+  
+.entete {
+    /* border: solid #555 1px; */
+    display: inline-block;
+    position: relative;  
+    margin-bottom: 12px;
+    /* background-color: #555; */
+    padding: 0;
+    box-shadow: 5px 5px 20px #555;
+    width: 85%;
+}
+  
+#p_recherche {
+    background-image: url('../Images/searchIcon_25x25.png');
+    background-size: 2em;
+    background-position-x: 0.5em;
+    background-position-y: 0.4em; 
+    background-repeat: no-repeat;
+    width: 70%;
+    padding: 30px;
+    color: #555;
+    font-size: 2em;
+    float: left;
+    text-align: right;
+    border: solid #555 1px;
+    box-shadow: 5px 5px 20px #555;
+    border-radius: 2px;
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    text-shadow: 1px 1px 10px #555;
+}
+  
+  
+iframe {
+    /* width: 20vw;height: 35vw; */
+    margin-top: 10vw;
+    width: 52vw; 
+    height: 91vw;
+    border: 2px solid #555;
+    border-radius: 3px;
+    background-color: #555;
+    box-shadow: 5px 5px 20px #555;
+    display: inline-block;
+}
+  
+button:disabled {
+    box-shadow: none;
+}
+  
+#prevBtn {
+    background-color: #555;
+    height: 100%;
+    width: 100%;
+    background-image: url(../Images/prev.png);
+    border-radius: 2px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s;
+    transform: rotate(0deg);
+    box-shadow: 5px 5px 20px #555;
+}
+  
+#divPrevButton {
+    display: inline-block;
+    top: 35%;
+    height: 30%;
+    width: 8%; 
+    left: 23%;   
+    position: absolute;
+    /* border: solid red 1px; */
+}
+  
+#prevBtn:hover:disabled {
+    transition: transform 0.5s 0.2s;
+    transform: rotate(180deg);
+}
+  
+#nextBtn {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Images/next.png);
+    border-radius: 2px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s;
+    transform: rotate(0deg);
+    background-color: #9900cc;
+    box-shadow: 5px 5px 20px #555;
+}
+  
+#divNextButton {
+    display: inline-block;
+    top: 35%;
+    height: 30%;
+    width: 8%; 
+    right: 23%; 
+    position: absolute;
+}
+  
+#nextBtn:hover:disabled {
+    transition: transform 0.5s 0.2s;
+    transform: rotate(-180deg);
+}
+  
+#abonnement {
+    background-color: #ff0000;
+    border-radius: 5px;
+    width: 40%;
+    padding: 30px;
+    font-size: 2em;
+    color: white;
+    box-shadow: 5px 5px 20px #555;
+    margin-top: 20%;
+}
+
+button {
+    border: none;    
+}
+  
+button:hover:enabled {
+    opacity: 0.8;
+}
 
 

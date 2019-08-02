@@ -40,7 +40,7 @@ function popMobileNavBar()
             else
             {
                 navATagList[i].style.display = "block";
-                navATagList[i].style.backgroundColor = "#555";
+                navATagList[i].style.backgroundColor = "#555";                
             }
 
         }                   
