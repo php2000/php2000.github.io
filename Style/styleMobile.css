@@ -34,7 +34,7 @@ main {
     
 .bgcontainer {
     position: relative;
-    border: black 10px solid;
+    /* border: black 10px solid; */
     height: 100%;
 }
     
@@ -42,8 +42,8 @@ main {
     content: "";
     position: absolute;
     left: 0;
-    top:0;
-    height: 100%;
+    top:-10%;
+    height: 110%;
     width: 100%; 
     background-image: url(../Images/maths-wallpaper.jpg);
     filter: blur(2px);
@@ -54,13 +54,13 @@ main {
 }
 
 #indexBgContainer {
-    /* height:82vh; */
+    height:85%;
 }
 
-/* #indexBgContainer::before {
+#indexBgContainer::before {
     top: -110%;
     height: 210%;
-} */
+}
 
 #videoBgContainer {
     height: 100%;
