@@ -20,6 +20,7 @@ main {
     height: 100%;
     /* margin-left:30px;
     margin-right:30px; */
+    /* border: solid 10px green; */
 }
     
 #bigDiv {
@@ -54,12 +55,12 @@ main {
 }
 
 #indexBgContainer {
-    height:85%;
+    height:90%;
 }
 
 #indexBgContainer::before {
-    top: -110%;
-    height: 210%;
+    top: -160%;
+    height: 260%;
 }
 
 #videoBgContainer {
@@ -76,7 +77,7 @@ footer {
     background-color: #555;
     color: white;
     font-size: 2em;
-    padding:1px;
+    padding:2px;
     margin-top:0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -247,6 +248,10 @@ footer {
 
 
 
+
+
+
+
   /* citation index */
 #freeCitation {
     font-size: 1.8em;
@@ -314,6 +319,12 @@ blockquote a::before {
 .auteur:visited {
     color: #555;
 }
+
+
+
+
+
+
 
 
 
