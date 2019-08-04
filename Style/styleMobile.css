@@ -1,4 +1,7 @@
 /* Tout  */
+html{
+    height: 100%;
+}
 * {box-sizing: border-box}
 
 body {
@@ -29,17 +32,16 @@ main {
     
 .bgcontainer {
     position: relative;
-    /* border: black 10px solid; */
-    height:95vh;
+    border: black 10px solid;
 }
     
 .bgcontainer::before{
     content: "";
     position: absolute;
-    top: -110%;
     left: 0;
+    top:0;
+    height: 105%;
     width: 100%; 
-    height: 210%;
     background-image: url(../Images/maths-wallpaper.jpg);
     filter: blur(2px);
     -webkit-filter: blur(2px);
@@ -47,6 +49,24 @@ main {
     display: block;
     z-index: -1;
 }
+
+#indexBgContainer {
+    height:82vh;
+}
+
+#indexBgContainer::before {
+    top: -110%;
+    height: 210%;
+}
+
+#videoBgContainer {
+    height: 100%;
+}
+/* 
+#videoBgContainer::before{
+    top:0;
+    height: 100%;
+} */
 
 footer {
     background-color: #555;
@@ -438,8 +458,7 @@ button:disabled {
     font-size: 2em;
     color: white;
     box-shadow: 5px 5px 20px #555;
-    /* margin-top: 20%; */
-    
+    margin-bottom: 5vh;    
 }
 
 button {
