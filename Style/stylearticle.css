@@ -159,7 +159,12 @@ img {
 }
 
 .grandeimg {
-    width: 90%;
+    width: 50vw;
+}
+
+img.rounded-shadow {
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #555;
 }
 
 .moyenneimg {
