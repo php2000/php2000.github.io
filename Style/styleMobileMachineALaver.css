@@ -1,50 +1,52 @@
 /* Tout */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin: 0;
-  background-color: #9900cc;
-  font-size: 1em;
-  overflow: hidden;
+html {
+    height: 100%;
 }
 
 
-
-
-
-
-
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #9900cc;
+    font-size: 1em;
+    overflow: hidden;
+}
 
 main {
-margin:0;
-margin-top: 10%;
+    margin:0;
+    margin-top: 10%;
+    height: 100%;
 }
 
 #bigDiv {
-text-align: center;
-padding-left: 10%;
-padding-right: 10%;
-border-radius: 3px;  
-padding-bottom: 50%;
-padding-top: 50%;
-position: relative;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 3px;  
+    padding-bottom: 50%;
+    padding-top: 50%;
+    position: relative;
+    height: 100%;
 }
 
 .bgcontainer {
-position: relative;
-border: #555 1px solid;
+    position: relative;
+    border: #555 1px solid;
+    height: 100%;
 }
 
 .bgcontainer::before{
-content: "";
-position: absolute;
-top: 0; left: 0;
-width: 100%; 
-height: 100%;
-background-image: url(../Images/maths-wallpaper.jpg);
-filter: blur(2px);
--webkit-filter: blur(2px);
-opacity: 0.8;
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: url(../Images/maths-wallpaper.jpg);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    opacity: 0.8;
 }
 
 
@@ -186,6 +188,7 @@ box-shadow: 5px 5px 20px #555;
 
 .petiteMachineALaverRapide {
     animation : rot 30s infinite;
+    height: 100%;
 }
 
 @keyframes rot{
