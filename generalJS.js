@@ -17,8 +17,23 @@ window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
 
 
 
+// Noooooooo Popup
 
 
+// $(document).mouseleave(function () {
+//     document.getElementById("Popup").style.visibility = "visible";
+// });
+
+// addEvent(document, "mouseleave", function(e) {
+//     test = e.target == null;
+//     if (test){
+//         document.getElementById("Popup").style.visibility = "visible";
+//     }
+// });
+//
+// addEvent(document, "mousein", function (e) {
+//     document.getElementById("Popup").style.visibility = "hidden";
+// });
 
 
 
@@ -29,7 +44,7 @@ function popMobileNavBar()
 {
     var navB = document.getElementById("navbar");
     var navATagList = navB.getElementsByTagName("a");
-
+    
     if (menuIsDeployed)
     {
         menuIsDeployed = false;
@@ -42,7 +57,7 @@ function popMobileNavBar()
                 navATagList[i].style.display = "block";
                 navATagList[i].style.backgroundColor = "#555";                
             }
-
+            
         }                   
     }
     else
