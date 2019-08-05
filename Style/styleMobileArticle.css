@@ -115,7 +115,7 @@ footer {
 a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 a:hover {
@@ -164,7 +164,7 @@ img {
 }
 
 .grandeimg {
-    width: 50vw;
+    width: 100%;
 }
 
 img.rounded-shadow {
