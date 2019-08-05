@@ -532,7 +532,7 @@ blockquote a::before {
   font-size: 1em;
   padding: 12px 5px 12px 20px;
   /* border: 1px solid #ddd; */
-  border:none;
+  border: none;
   border-radius: 3px;
   float: right;
   width: 20%;

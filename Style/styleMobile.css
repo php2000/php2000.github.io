@@ -1,4 +1,7 @@
 /* Tout  */
+html{
+    height: 100%;
+}
 * {box-sizing: border-box}
 
 body {
@@ -8,13 +11,16 @@ body {
     background-color: #9900cc;
     font-size: 1em;
     border: none;
+    height: 100%;
 }
 
 main {
     margin:0;
     margin-top: 50px;
+    height: 100%;
     /* margin-left:30px;
     margin-right:30px; */
+    /* border: solid 10px green; */
 }
     
 #bigDiv {
@@ -29,17 +35,19 @@ main {
     
 .bgcontainer {
     position: relative;
+    top: 0;
+    left:0;
     /* border: black 10px solid; */
-    height:95vh;
+    height: 100%;
 }
     
 .bgcontainer::before{
     content: "";
     position: absolute;
-    top: -110%;
     left: 0;
+    top:-10%;
+    height: 110%;
     width: 100%; 
-    height: 210%;
     background-image: url(../Images/maths-wallpaper.jpg);
     filter: blur(2px);
     -webkit-filter: blur(2px);
@@ -48,11 +56,30 @@ main {
     z-index: -1;
 }
 
+#indexBgContainer {
+    height:90%;
+}
+
+#indexBgContainer::before {
+    top: -160%;
+    height: 260%;
+}
+
+#videoBgContainer {
+    height: 100%;
+}
+/* 
+#videoBgContainer::before{
+    top:0;
+    height: 100%;
+} */
+
 footer {
+    position: relative;
     background-color: #555;
     color: white;
     font-size: 2em;
-    padding:1px;
+    padding:2px;
     margin-top:0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -223,7 +250,7 @@ footer {
 
 
 
-  /* citation index */
+/* citation index */
 #freeCitation {
     font-size: 1.8em;
     color: #555;
@@ -242,6 +269,8 @@ footer {
     padding-left: 60px;
     width: 90%;
 }
+
+
   
 blockquote p {
     quotes: "\201C""\201D""\2018""\2019";
@@ -254,17 +283,18 @@ blockquote p:before {
     top: 80px;
     left:40px;
     content: open-quote;
-    font-family:Georgia, "Times New Roman", Times, serif;  font-weight: bolder;
+    font-family:Georgia, "Times New Roman", Times, serif;font-weight: bolder; 
     font-size:3em;
     color:#9900cc;
 }
   
 blockquote p:after{
     position: absolute;
+    /* top: 20%; */
     bottom: 0;
     right:60px;
     content: close-quote;
-    font-family:Georgia, "Times New Roman", Times, serif;  font-weight: bolder;
+    font-family:Georgia, "Times New Roman", Times, serif;font-weight: bolder;
     font-size: 3em;
     color:#9900cc;
 }
@@ -290,6 +320,12 @@ blockquote a::before {
 .auteur:visited {
     color: #555;
 }
+
+
+
+
+
+
 
 
 
@@ -357,7 +393,6 @@ blockquote a::before {
   
   
 iframe {
-    /* width: 20vw;height: 35vw; */
     margin-top: 10vw;
     margin-bottom: 10vw;
     width: 52vw; 
@@ -389,10 +424,10 @@ button:disabled {
   
 #divPrevButton {
     display: inline-block;
-    top: 30%;
+    top: 25%;
     height: 25%;
-    width: 13%; 
-    left: 2%;   
+    width: 14%; 
+    left: 0.6%;   
     position: absolute;
     /* border: solid red 1px; */
 }
@@ -418,10 +453,10 @@ button:disabled {
   
 #divNextButton {
     display: inline-block;
-    top: 30%;
+    top: 25%;
     height: 25%;
-    width: 13%; 
-    right: 2%; 
+    width: 14%; 
+    right: 0.6%; 
     position: absolute;
 }
   
@@ -438,8 +473,7 @@ button:disabled {
     font-size: 2em;
     color: white;
     box-shadow: 5px 5px 20px #555;
-    /* margin-top: 20%; */
-    
+    margin-bottom: 5vh;    
 }
 
 button {
