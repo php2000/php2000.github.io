@@ -5,11 +5,13 @@
         <title>D&eacutemonstration Irr&eacutefutable</title>
         <link rel="icon" type="image/jpg" href="Images/LogoDI.png">
         <!-- <link rel="shortcut icon" href="logo.ico"> -->
-        <link rel="stylesheet" type="text/css" href="Style/stylearticle.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 700px)" href="Style/stylearticle.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 700px)" href="Style/styleMobileArticle.css" />
     </head>
     <body>
         <!-- The navigation menu -->
         <div id="navbar">
+            <button id="navButton" onclick="popMobileNavBar()"></button>
             <a class="active" href="index.html">Articles</a> 
             <a href="videos.html">Vid&eacuteos</a> 
             <a href="disclaimer.html">Disclaimer</a>
@@ -53,21 +55,6 @@
 
 
 
-        <script type="text/javascript"> 
-
-            var prevScrollpos = window.pageYOffset;
-            
-            window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
-            {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-                } 
-                else {
-                document.getElementById("navbar").style.top = "-50px";
-                }
-                prevScrollpos = currentScrollPos;
-            }
-        </script>
+        <script type="text/javascript" src="generalJS.js"></script>
     </body>
 </html>

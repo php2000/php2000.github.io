@@ -175,6 +175,12 @@ img.rounded-shadow {
   width: 13%;
 }
 
+.formule {
+  font-size: 1.5em;
+  font-weight: normal; 
+  font-style: italic;
+}
+
 
 
 
@@ -226,16 +232,6 @@ img.rounded-shadow {
     background-color: #9900cc;
   }
   
-  @media screen and (max-width: 700px) {
-    #navbar a {
-      float: none;
-      padding: 12px;
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-      
-      .feuille{
-          top: 200px;
-      }
+  #navButton {
+    display: none;
   }

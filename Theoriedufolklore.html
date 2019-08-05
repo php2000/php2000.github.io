@@ -5,13 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="icon" type="image/jpg" href="Images/LogoDI.png">
     <meta name="author" content="Des gens qui vont à la salle (pas comme Gab...)">
-    <link rel="stylesheet" type="text/css" href="Style/stylearticle.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 700px)" href="Style/stylearticle.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 700px)" href="Style/styleMobileArticle.css" />
     <title>D&eacute;monstration Irr&eacute;futable</title>
 </head>
 <body>
 <!-- The navigation menu -->
 
 <div id="navbar">
+    <button id="navButton" onclick="popMobileNavBar()"></button>
     <a class="active" href="index.html">Articles</a>
     <a href="videos.html">Vid&eacuteos</a>
     <a href="disclaimer.html">Disclaimer</a>
@@ -27,7 +29,7 @@
         <p>A la salle, il y a deux types de personnes : les machines de guerre et les non-machines de guerre. Une des particularités qui différencie ces deux espèces bien distinctes est la connaissance de leur poids sur chaque machine. Ainsi pour paraître être une machine de guerre à la salle, il est indispensable de mettre des poids très précis pour montrer sa connaissance des lieux. Pour cela, il faut faire intervenir un élément très important : le poids de 1.25 kg. C’est bien ce poids là (car c’est la plus petite unité de mesure de la masse à la salle) qui va permettre d’imposer sa culture. Nous l’avons donc à juste titre appeler : le folklore</p>
         
         <p>Le folklore nous donnant un statut de machine de guerre, les exercices deviennent alors plus simple à réaliser. Et donc plus nous ajoutons de folklore, plus l’exercice sera facile. En bon mathématicien moderne, je dirais que le folklore est inversement proportionnelle à la masse. En prennant en compte la constante du folklore (1 folklore = 1.25 kg), nous arrivons à la formule générique suivante pour une quantité F de folklore et une masse m de fonte :</p>
-        <h5 style="font-size: 1.5em; font-weight: normal; font-style: italic;"> F = 1.25 / m</h5>
+        <h5 class="formule"> F = 1.25 / m</h5>
         <p>Ainsi voici quelques valeurs de folklore remarquables :</p>        
         <ul>
             <li>1 folklore = 1.25 kg</li>
@@ -60,21 +62,6 @@
 
 
 
-<script type="text/javascript">
-
-    var prevScrollpos = window.pageYOffset;
-
-    window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
-    {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        }
-        else {
-            document.getElementById("navbar").style.top = "-50px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-</script>
+<script type="text/javascript" src="generalJS.js"></script>
 </body>
 </html>
