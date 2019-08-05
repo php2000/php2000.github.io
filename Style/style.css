@@ -37,7 +37,10 @@ footer {
 
 @keyframes hein {
     0% {transform: translate(0,0)}
-    50% {transform: translate(400px, 0)}
+    20% {transform: translate(400px,-100px)}
+    40% {transform: translate(-400px, 0)}
+    60% {transform: translate(400px, 100px)}
+    80% {transform: translate(0,300px)}
     100% {transform: translate(0, 0)}
 }
 
@@ -122,12 +125,46 @@ h3::before {
 p {
   color: #555;
   text-shadow: 1px 1px 10px #555; 
+  /* border: solid 3px green; */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* citation index */
 #freeCitation {
   margin-top:8%; 
   font-size: 1.1em;
+  text-align: center;
 }
 
 .citation{
@@ -189,6 +226,24 @@ blockquote a::before {
 .auteur:hover {
   color: #9900cc;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -275,6 +330,19 @@ blockquote a::before {
   -webkit-filter: blur(1.5px); /* Safari 6.0 - 9.0 */
   filter: blur(1.5px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -466,6 +534,21 @@ blockquote a::before {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Pour la nav bar */
 
 #navbar {
@@ -512,6 +595,24 @@ blockquote a::before {
     text-align: left;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
