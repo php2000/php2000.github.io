@@ -30,7 +30,7 @@ main {
     border-radius: 3px;
     margin-top: 20%;
     position: relative;
-    border: solid 10px red;
+    /* border: solid 10px red; */
 }
     
 .bgcontainer {
@@ -270,9 +270,7 @@ footer {
     width: 90%;
 }
 
-.marginToAdd{
-    border: solid 10px green;
-}
+
   
 blockquote p {
     quotes: "\201C""\201D""\2018""\2019";
