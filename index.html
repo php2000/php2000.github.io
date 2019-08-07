@@ -109,15 +109,17 @@
                 }                
             };
 
-            document.getElementById("txtRecherche").onblur = function()
-            {
-                ul = document.getElementById("articleList");
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++)
-                {
-                    li[i].style.display = "none";
-                }   
-            }
+            // document.getElementById("txtRecherche").onblur = setTimeout(function()
+            // {
+                
+            //     ul = document.getElementById("articleList");
+            //     li = ul.getElementsByTagName("li");
+            //     for (i = 0; i < li.length; i++)
+            //     {
+            //         li[i].style.display = "none";
+            //     }   
+            // }, 2000);
+            
 
             function searchBarFunc() 
             {                   
