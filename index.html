@@ -109,6 +109,16 @@
                 }                
             };
 
+            document.getElementById("txtRecherche").onblur = function()
+            {
+                ul = document.getElementById("articleList");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++)
+                {
+                    li[i].style.display = "none";
+                }   
+            }
+
             function searchBarFunc() 
             {                   
                 var input, filter, ul, li, a, i, txtValue;
