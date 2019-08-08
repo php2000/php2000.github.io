@@ -50,11 +50,12 @@
                 </div>
             </div>
 
-            <div class="bgcontainer" id="indexBgContainer">            
-                <div id="bigDiv"> 
-                    <div class="marginToAdd">
-                        <p id="freeCitation">Free citation :</p>
-                    
+            <div class="bgcontainer" id="indexBgContainer">  
+                <marquee id="newsDefilantes"></marquee>          
+                <div id="bigDiv">                        
+
+                        <p id="freeCitation" scrollamount="2">Free citation :</p>
+
                         <blockquote class="citation"><p>Les jaloux vont maigrir.</p><a href="descTri.html" class="auteur">Tri</a></blockquote>
                         <blockquote class="citation"><p>Mourrez tous. Encore.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
                         <blockquote class="citation"><p>Donne tout.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
@@ -74,7 +75,6 @@
                         <blockquote class="citation"><p>Gab ne donne pas tout mais il donne touffe.</p><a href="contact.html" class="auteur">Plèbe</a></blockquote>
                         <blockquote class="citation"><p>C'est comme si je mangeais une poire et là le mec me propose une Clio.</p><a href="descGuillaume.html" class="auteur">Mr. Univers</a></blockquote>
                         <blockquote class="citation"><p>&Agrave; drrrwwouuate.</p><a class="auteur" style="color:#555;">&Agrave; drrrwwouuate</a></blockquote>
-                    </div>
                 </div>
             </div>
             <footer>
@@ -92,6 +92,23 @@
         <script type="text/javascript" src="generalJS.js"></script>
 
         <script type="text/javascript">
+
+        var news = 
+        [
+            'Nous avons remarqué que la vidéo qui a fait le moins de vues est aussi celle où Gab apparaissait le plus.',
+            'Kric a été aperçu en train de faire les abs.',
+            'Guillaume est une machine de guerre.'    
+        ];
+        
+        
+        document.getElementById("newsDefilantes").innerHTML = news[0] + " | " + news[1] + " | " + news[2] + " | ";
+
+
+
+
+
+
+
 
 
 
