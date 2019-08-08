@@ -37,7 +37,7 @@
                     <ul id="articleList">
                         <li><a href="TomEstUnPeigneEtRienDAutre.html">Tom est un peigne gauche</a></li>
                         <li><a href="tutosalle.html">Tuto salle : les pro-tips &agrave; conna&icirc;tre</a></li>
-                        <li><a href="fifihabitude.html">Fifi s'habitue toujours</a></li>                
+                        <li><a  href="fifihabitude.html">Fifi s'habitue toujours</a></li>                
                         <li><a href="#">Formation Mayday</a></li>
                         <li><a href="inexistencedegab.html">Gab est inexistant dans l'esport</a></li>
                         <li><a href="checkcie.html">L'art du Check CIE</a></li>
@@ -106,19 +106,22 @@
                 for (i = 0; i < li.length; i++)
                 {
                     li[i].style.display = "block";
+                    li[i].addEventListener("mousedown", event => event.preventDefault());
                 }                
             };
 
-            // document.getElementById("txtRecherche").onblur = setTimeout(function()
-            // {
+
+            document.getElementById("txtRecherche").onblur = function()
+            {
                 
-            //     ul = document.getElementById("articleList");
-            //     li = ul.getElementsByTagName("li");
-            //     for (i = 0; i < li.length; i++)
-            //     {
-            //         li[i].style.display = "none";
-            //     }   
-            // }, 2000);
+                ul = document.getElementById("articleList");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++)
+                {
+                    li[i].style.display = "none";
+                    li[i].removeEventListener("mousedown", event => event.preventDefault());
+                }   
+            };
             
 
             function searchBarFunc() 
