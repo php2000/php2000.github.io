@@ -31,8 +31,11 @@ footer {
   z-index: 1;
 }
 
-.spasme {
+.spasmedroite {
     animation : hein 0.5s;
+}
+.spasmegauche {
+  animation: heinV2 0.5s;
 }
 
 @keyframes hein {
@@ -44,6 +47,14 @@ footer {
     100% {transform: translate(0, 0)}
 }
 
+@keyframes heinV2 {
+  0% {transform: translate(0,0)}
+  20% {transform: translate(-400px,-100px)}
+  40% {transform: translate(400px, 0)}
+  60% {transform: translate(-400px, 100px)}
+  80% {transform: translate(0,300px)}
+  100% {transform: translate(0, 0)}
+}
 
 
 #bigDiv {
@@ -586,7 +597,7 @@ blockquote a::before {
   background-color: #9900cc;
 }
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width:700px) {
   #navbar a {
     float: none;
     padding: 12px;

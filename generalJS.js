@@ -37,6 +37,48 @@ window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
 
 
 
+var prevEvent, currentEvent;
+document.documentElement.onmousemove=function(event){
+  currentEvent = event;
+}
+
+var switchAnim = false;
+
+setInterval(function()
+{
+    if(prevEvent && currentEvent)
+    {
+        var movementX = Math.abs(currentEvent.screenX-prevEvent.screenX);
+        var movementY = Math.abs(currentEvent.screenY-prevEvent.screenY);
+        var movement = Math.sqrt(movementX*movementX+movementY*movementY);
+        // console.log(movement);
+
+        if (movement > 450)
+        {
+            if (switchAnim)
+                document.body.classList.add("spasmegauche");
+            else
+                document.body.classList.add("spasmedroite");
+            setTimeout(removeSpasme, 520);
+        }
+    }
+    prevEvent=currentEvent;
+}, 100);
+
+function removeSpasme()
+{
+    // console.log("spasme removed");
+    if (switchAnim)
+        document.body.classList.remove("spasmegauche");
+    else
+        document.body.classList.remove("spasmedroite");
+    switchAnim = !switchAnim;    
+}
+
+
+
+
+
 
 // Sur mobile
 var menuIsDeployed = false;
