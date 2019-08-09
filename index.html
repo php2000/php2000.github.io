@@ -51,7 +51,7 @@
             </div>
 
             <div class="bgcontainer" id="indexBgContainer">  
-                <marquee id="newsDefilantes"></marquee>          
+                <p id="marquee"><span></span></p>    
                 <div id="bigDiv">                        
 
                         <p id="freeCitation" scrollamount="2">Free citation :</p>
@@ -95,13 +95,27 @@
 
         var news = 
         [
-            'Nous avons remarqué que la vidéo qui a fait le moins de vues est aussi celle où Gab apparaissait le plus.',
+            'Nous avons remarqué que la vidéo ayant comptabilisé le moins de vues est aussi celle où Gab apparaissait le plus.',
             'Kric a été aperçu en train de faire les abs.',
             'Guillaume est une machine de guerre.'    
         ];
         
         
-        document.getElementById("newsDefilantes").innerHTML = news[0] + " | " + news[1] + " | " + news[2] + " | ";
+        var bandeauDefilant = document.getElementById("marquee").firstChild;        
+        bandeauDefilant.innerHTML = news[0];
+        bandeauDefilant.style.animation = "marquee 8s linear infinite";
+        bandeauDefilant.addEventListener("animationiteration", changeNews);
+        newsId = 1;        
+
+        function changeNews() 
+        {
+            console.log("Changing the news");
+            bandeauDefilant.innerHTML = news[newsId];
+            newsId = (newsId + 1) % 3;
+        }
+        
+
+
 
 
 

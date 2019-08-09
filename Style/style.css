@@ -843,8 +843,37 @@ background-color: #9900cc;
 
 
 /* news */
-#newsDefilantes {
-  padding: 20px;
+#marquee {
+  width: 99%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* border: solid 1px red; */
+  padding: 10px;
+}
+
+#marquee span {
+  /* border: solid 1px green; */
+  display: inline-block;
   font-size: 1.5em;
-  
+  color: #555;
+  font-style: italic;
+  box-shadow: none;
+  padding-left: 100%;
+  /* show the marquee just outside the paragraph */
+  /* animation: marquee 8s linear; */
+}
+
+#marquee span:hover {
+  animation-play-state: paused
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }

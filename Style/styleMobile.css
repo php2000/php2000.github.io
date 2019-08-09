@@ -619,7 +619,32 @@ button:hover:enabled {
 
 
 /* news */
-#newsDefilantes {
+#marquee {
+    width: 80%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border: solid 1px red; */
+    padding-top: 50px;
+  }
+  
+  #marquee span {
+    /* border: solid 1px green; */
+    display: inline-block;
     font-size: 2.5em;
-    padding: 100px;
-}
+    color: #555;
+    font-style: italic;
+    box-shadow: none;
+    padding-left: 100%;
+    text-shadow: 1px 1px 10px #555;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
