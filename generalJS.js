@@ -17,6 +17,40 @@ window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Noooooooo Popup
 
 
@@ -34,6 +68,73 @@ window.onscroll = function() // Pour faire disparaitre/apparaitre la navbar
 // addEvent(document, "mousein", function (e) {
 //     document.getElementById("Popup").style.visibility = "hidden";
 // });
+
+
+
+// var test = document.getElementsByTagName("main")[0];
+  
+  
+//   // ce gestionnaire ne sera exécuté qu'une seule fois quand le curseur sortira de
+//   // de la liste non-organisée
+//   test.addEventListener("mouseleave", function( event ) {   
+//     // mise en valeur de la cible de mouseleave
+//     event.target.style.backgroundColor = "green";
+
+//     // réinitialisation la couleur après un court délai
+//     setTimeout(function() {
+//       event.target.style.color = "";
+//     }, 500);
+//   }, false);
+  
+  
+//   // ce gestionnaire sera exécuté à chaque fois que le curseur sortira d'un élément
+//   // de la liste
+//   test.addEventListener("mouseout", function( event ) {   
+//     // mise en valeur de la cible de mouseout
+//     event.target.style.backgroundColor = "orange";
+
+//     // réinitialisation la couleur après un court délai
+//     setTimeout(function() {
+//       event.target.style.color = "";
+//     }, 500);
+//   }, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -74,6 +175,42 @@ function removeSpasme()
         document.body.classList.remove("spasmedroite");
     switchAnim = !switchAnim;    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
