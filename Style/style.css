@@ -140,7 +140,21 @@ p {
 }
 
 
+table
+{
+    border-collapse: collapse;
+	box-shadow: 5px 5px 20px #555;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+	
+    border: 1px solid black;
+}
 
+th
+{
+	text-shadow: 1px 1px 10px #555; 
+}
 
 
 
