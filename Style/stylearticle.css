@@ -181,6 +181,39 @@ img.rounded-shadow {
   font-style: italic;
 }
 
+#Popup {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  left : 25%;
+  z-index: 1;
+}
+
+.spasmedroite {
+  animation : hein 0.5s;
+}
+.spasmegauche {
+  animation: heinV2 0.5s;
+}
+
+@keyframes hein {
+  0% {transform: translate(0,0)}
+  20% {transform: translate(400px,-100px)}
+  40% {transform: translate(-400px, 0)}
+  60% {transform: translate(400px, 100px)}
+  80% {transform: translate(0,300px)}
+  100% {transform: translate(0, 0)}
+}
+
+@keyframes heinV2 {
+  0% {transform: translate(0,0)}
+  20% {transform: translate(-400px,-100px)}
+  40% {transform: translate(400px, 0)}
+  60% {transform: translate(-400px, 100px)}
+  80% {transform: translate(0,300px)}
+  100% {transform: translate(0, 0)}
+}
+
 
 
 
@@ -219,7 +252,7 @@ img.rounded-shadow {
     color: white;
     text-decoration: none;
     font-size: 17px;
-    width: 25%; /* Five links of equal widths */
+    width: 20%; /* Five links of equal widths */
     text-align: center;
   }
   

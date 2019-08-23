@@ -142,13 +142,13 @@ p {
 
 table
 {
-    border-collapse: collapse;
-	box-shadow: 5px 5px 20px #555;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 20px #555;
 }
 td, th /* Mettre une bordure sur les td ET les th */
-{
-	
+{	
     border: 1px solid black;
+    padding: 10px;
 }
 
 th
@@ -249,6 +249,46 @@ blockquote a::before {
   color: #555;
 }
 .auteur:hover {
+  color: #9900cc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Previsions */
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover {
   color: #9900cc;
 }
 
@@ -598,7 +638,7 @@ blockquote a::before {
   color: white;
   text-decoration: none;
   font-size: 17px;
-  width: 25%; /* Five links of equal widths */
+  width: 20%; /* Five links of equal widths */
   text-align: center;
 }
 
