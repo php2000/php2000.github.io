@@ -117,6 +117,22 @@ a {
     text-decoration: none;
 }
 
+table
+{
+  border-collapse: collapse;
+  box-shadow: 5px 5px 20px #555;
+  border : solid #9900cc 2px;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{	
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th
+{
+	text-shadow: 1px 1px 10px #555; 
+}
 
 
 
