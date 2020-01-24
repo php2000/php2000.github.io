@@ -50,7 +50,7 @@ h3 {
     font-size: 3em;
 }
 
-h4 {
+h5 {
     padding-top:30px;
     font-size: 2.5em;
     color: #555;
@@ -58,7 +58,7 @@ h4 {
     text-indent: 1em;
 }
 
-h4::before {
+h5::before {
     content: "\2022";
     color: #555;
     font-weight: bold;
